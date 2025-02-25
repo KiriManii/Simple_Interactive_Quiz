@@ -1,10 +1,4 @@
-Here's an updated **README.md** file that includes all the new features and improvements:  
-
----
-
-# **Simple Interactive Quiz**  
-
-🚀 **A feature-rich interactive quiz built with HTML, CSS, and JavaScript.**  
+**Simple Interactive Quiz**   
 
 ## 📌 Overview  
 The **Simple Interactive Quiz** is an engaging JavaScript project designed to test a user’s knowledge through multiple-choice questions. It features real-time feedback, progress tracking, and leaderboard functionality.  

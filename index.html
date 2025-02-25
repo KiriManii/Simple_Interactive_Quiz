@@ -30,16 +30,18 @@
         <p id="best-score">Best Score: 0</p>
 
         <!-- Retry Quiz Button (Initially Hidden) -->
-        <button id="retry-quiz" style="display: none;">Try Again</button>
+        <button id="retry-quiz" style="display: none;">
+            <img src="assets/icons/retry.svg" alt="Retry" width="16"> Try Again
+        </button>
 
         <!-- Leaderboard -->
-        <h3>Leaderboard</h3>
+        <h3>Leaderboard <img src="assets/icons/leaderboard.svg" alt="Leaderboard" width="20"></h3>
         <ul id="leaderboard"></ul>
     </div>
 
     <!-- Quiz Sounds -->
-    <audio id="correct-sound" src="correct.mp3"></audio>
-    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <audio id="correct-sound" src="assets/sounds/correct.mp3" preload="auto"></audio>
+    <audio id="wrong-sound" src="assets/sounds/wrong.mp3" preload="auto"></audio>
 
     <script src="quiz.js"></script>
 </body>

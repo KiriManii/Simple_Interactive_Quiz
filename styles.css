@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -5,73 +6,120 @@ body {
     text-align: center;
 }
 
+/* Quiz Container */
 #quiz-container {
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #ddd;
+    background: white;
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Progress Bar */
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-bottom: 15px;
+    background: #ddd;
+}
+
+/* Question */
 #quiz-question {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-#choices-container {
-    margin-bottom: 15px;
-}
-
+/* Answer Choices */
 input[type="radio"] {
     margin-right: 10px;
 }
 
 label {
-    margin-right: 20px;
+    font-size: 18px;
     cursor: pointer;
-    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ececec;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
 }
 
-#submit-answer {
+label:hover {
+    background: #dcdcdc;
+}
+
+/* Buttons */
+button {
     display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007bff;
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-}
-
-#submit-answer:hover {
-    background-color: #0056b3;
-}
-
-#feedback {
+    transition: background 0.3s;
     margin-top: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Retry Button */
+#retry-quiz {
+    background: #28a745;
+}
+
+#retry-quiz:hover {
+    background: #218838;
+}
+
+/* Feedback */
+#feedback {
     font-size: 18px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
-.navigation-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+/* Score Display */
+#score, #best-score {
+    font-size: 18px;
+    margin-top: 10px;
 }
 
-#prev-question, #next-question {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: white;
-    border: none;
+/* Leaderboard */
+h3 {
+    margin-top: 30px;
+}
+
+#leaderboard {
+    list-style: none;
+    padding: 0;
+}
+
+#leaderboard li {
+    background: #ececec;
+    padding: 10px;
+    margin: 5px 0;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-#prev-question:hover, #next-question:hover {
-    background-color: #218838;
+/* Responsive Design */
+@media (max-width: 600px) {
+    #quiz-container {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }

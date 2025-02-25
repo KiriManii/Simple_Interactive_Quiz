@@ -8,17 +8,38 @@
 </head>
 <body>
     <div id="quiz-container">
+        <!-- Progress Bar -->
+        <progress id="progress-bar" value="0" max="100"></progress>
+
+        <!-- Quiz Question -->
         <p id="quiz-question"></p>
+
+        <!-- Answer Choices -->
         <div id="choices-container"></div>
-        
+
+        <!-- Submit Answer Button -->
         <button id="submit-answer">Submit Answer</button>
+
+        <!-- Feedback -->
         <p id="feedback"></p>
-        
-        <div class="navigation-buttons">
-            <button id="prev-question">Previous</button>
-            <button id="next-question">Next</button>
-        </div>
+
+        <!-- Score Display -->
+        <p id="score">Score: 0</p>
+
+        <!-- Best Score -->
+        <p id="best-score">Best Score: 0</p>
+
+        <!-- Retry Quiz Button (Initially Hidden) -->
+        <button id="retry-quiz" style="display: none;">Try Again</button>
+
+        <!-- Leaderboard -->
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard"></ul>
     </div>
+
+    <!-- Quiz Sounds -->
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
 
     <script src="quiz.js"></script>
 </body>

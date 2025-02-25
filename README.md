@@ -33,7 +33,7 @@ Simple_Interactive_Quiz/
 ---
 
 🚀 Live Demo 
-🔗 [Click here to view the deployed project](https://simple-interactive-quiz.vercel.app/) (Replace with your actual Vercel link after deployment.)  
+🔗 [Click here to view the deployed project](https://kirimanii-simple-interactive-quiz.vercel.app/)  
 
 ---
 
